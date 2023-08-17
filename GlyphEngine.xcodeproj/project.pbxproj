@@ -119,6 +119,7 @@
 		BAB9CF6A2A8E8D3E006E31FB /* GlyphEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GlyphEngine; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB9CF6D2A8E8D3E006E31FB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BAB9CF742A8E8FE1006E31FB /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../../SDL-release-2.28.2/Xcode/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
+		BACD88082A8EE3C600994987 /* app.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = app.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				BAB9CF6D2A8E8D3E006E31FB /* main.cpp */,
+				BACD88082A8EE3C600994987 /* app.h */,
 			);
 			path = GlyphEngine;
 			sourceTree = "<group>";
