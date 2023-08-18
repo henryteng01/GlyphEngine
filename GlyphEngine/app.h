@@ -8,11 +8,15 @@
 #ifndef app_h
 #define app_h
 
-#include <SDL2/SDL_video.h>
+#include <SDL2/SDL.h>
 
 struct App {
     SDL_Window *window;
     SDL_Renderer *renderer;
+    
+    App();
+    void initSDL();
+    ~App();
 };
 
 #endif /* app_h */

@@ -8,11 +8,23 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 #include "app.h"
+#include "draw.hpp"
+#include "input.hpp"
 
 int main(int argc, const char * argv[]) {
-    if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
-        std::cout << "SDL could not initialize! SDL Error: " << SDL_GetError() << std::endl;
+    App app;
+    
+    app.initSDL();
+    
+    while (1) {
+        prepareScene(app.renderer);
+        
+        doInput();
+        
+        presentScene(app.renderer);
+        
+        SDL_Delay(16);
     }
-    std::cout << "Hello, World!" << std::endl;
-    return EXIT_SUCCESS;
+    std::cout << "BatChest" << std::endl;
+    return 0;
 }
