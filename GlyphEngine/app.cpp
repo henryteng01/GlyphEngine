@@ -8,6 +8,7 @@
 #include <iostream>
 #include "app.h"
 #include <SDL2/SDL.h>
+#include <SDL2_image/SDL_image.h>
 
 App::App() : window(nullptr), renderer(nullptr) {
     
@@ -34,6 +35,8 @@ void App::initSDL() {
     SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");
     
     renderer = SDL_CreateRenderer(window, -1, rendererFlags);
+    
+    IMG_Init(IMG_INIT_PNG | IMG_INIT_JPG);
     
     if (!renderer) {
         std::cout << "Could not create renderer. SDL Error: " << SDL_GetError() << std::endl;

@@ -13,5 +13,7 @@
 
 void prepareScene(SDL_Renderer* renderer);
 void presentScene(SDL_Renderer * renderer);
+SDL_Texture *loadTexture(SDL_Renderer* renderer, char* filename);
+void blit(SDL_Renderer* renderer, SDL_Texture *texture, int x, int y);
 
 #endif /* draw_hpp */
