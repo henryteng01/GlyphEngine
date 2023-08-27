@@ -13,6 +13,10 @@
 struct App {
     SDL_Window *window;
     SDL_Renderer *renderer;
+    int up;
+    int down;
+    int left;
+    int right;
     
     App();
     void initSDL();

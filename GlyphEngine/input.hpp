@@ -9,7 +9,10 @@
 #define input_hpp
 
 #include <stdio.h>
+#include "app.h"
 
-void doInput();
+void doKeyDown(SDL_KeyboardEvent *event, App *app);
+void doKeyUp(SDL_KeyboardEvent *event, App *app);
+void doInput(App *app);
 
 #endif /* input_hpp */

@@ -23,7 +23,23 @@ int main(int argc, const char * argv[]) {
     while (1) {
         prepareScene(app.renderer);
         
-        doInput();
+        doInput(&app);
+        
+        if (app.up) {
+            player.y -= 1;
+        }
+        
+        if (app.down) {
+            player.y += 1;
+        }
+        
+        if (app.left) {
+            player.x -= 1;
+        }
+        
+        if (app.right) {
+            player.x += 1;
+        }
         
         blit(app.renderer, player.texture, player.x, player.y);
         
