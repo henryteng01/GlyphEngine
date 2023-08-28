@@ -29,15 +29,15 @@ int main(int argc, const char * argv[]) {
             player.y -= 1;
         }
         
-        if (app.down) {
+        else if (app.down) {
             player.y += 1;
         }
         
-        if (app.left) {
+        else if (app.left) {
             player.x -= 1;
         }
         
-        if (app.right) {
+        else if (app.right) {
             player.x += 1;
         }
         
