@@ -17,6 +17,11 @@ int main(int argc, const char * argv[]) {
     app.initSDL();
     
     char* filename = "/Users/henry/Projects/GlyphEngine/GlyphEngine/pacman.png";
+# download png and put absolute path here
+    char* ghost_file = "";
+    char* ghost_file1 = "";
+    char* ghost_file2 = "";
+    char* ghost_file3 = "";
     SDL_Texture *texture = loadTexture(app.renderer, filename);
     Player player(100, 100, texture);
     

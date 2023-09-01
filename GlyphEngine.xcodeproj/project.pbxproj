@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1BFAA62AA1E7F600158888 /* ghost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA1BFAA42AA1E7F600158888 /* ghost.cpp */; };
 		BA36056A2A9558FB00A01FD2 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA3605682A9558FB00A01FD2 /* player.cpp */; };
 		BA36056D2A955D9900A01FD2 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36056C2A955D9900A01FD2 /* SDL2_image.framework */; };
 		BA3D3AFC2A90268700B55A23 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3D3AFB2A90268700B55A23 /* SDL2.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA1BFAA42AA1E7F600158888 /* ghost.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ghost.cpp; sourceTree = "<group>"; };
+		BA1BFAA52AA1E7F600158888 /* ghost.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ghost.hpp; sourceTree = "<group>"; };
 		BA3605682A9558FB00A01FD2 /* player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
 		BA3605692A9558FB00A01FD2 /* player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = player.hpp; sourceTree = "<group>"; };
 		BA36056C2A955D9900A01FD2 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 				BA3D3B042A902EAB00B55A23 /* draw.hpp */,
 				BA3605682A9558FB00A01FD2 /* player.cpp */,
 				BA3605692A9558FB00A01FD2 /* player.hpp */,
+				BA1BFAA42AA1E7F600158888 /* ghost.cpp */,
+				BA1BFAA52AA1E7F600158888 /* ghost.hpp */,
 			);
 			path = GlyphEngine;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAB9CF6E2A8E8D3E006E31FB /* main.cpp in Sources */,
+				BA1BFAA62AA1E7F600158888 /* ghost.cpp in Sources */,
 				BA36056A2A9558FB00A01FD2 /* player.cpp in Sources */,
 				BA3D3B072A90324500B55A23 /* app.cpp in Sources */,
 				BA3D3B022A902CC200B55A23 /* input.cpp in Sources */,

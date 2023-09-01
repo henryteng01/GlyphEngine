@@ -32,7 +32,7 @@ SDL_Texture *loadTexture(SDL_Renderer *renderer, char* filename) {
     
     return texture;
 }
-# adjust this to be more general
+
 void blit(SDL_Renderer *renderer, SDL_Texture *texture, int x, int y) {
     SDL_Rect dest;
     
